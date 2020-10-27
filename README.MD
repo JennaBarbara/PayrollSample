@@ -33,7 +33,7 @@ You will need to install Postgres locally and initialize a database locally to r
 
 ## Building and Running the App
 
-In order to use connect the Spring Boot App to your Local Database Instance you will to set the following environment variables. Example values shown below.
+In order to connect the Spring Boot App to your Local Database Instance, you will to set the following environment variables. Example values shown below.
 
 ```
 spring.datasource.url=jdbc:postgresql://localhost:5432/payrolldb
