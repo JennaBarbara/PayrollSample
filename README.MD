@@ -8,18 +8,21 @@ You will need to install Postgres locally and initialize a database locally to r
 
 1. Create a user with admin privileges.
     ```
-    sudo -u postgres createuser --interactive --password postgresUser
+    $ createuser --interactive --password postgresUser
+    Shall the new role be a superuser? (y/n) y
+    Password: 
+
     ```
 
 1. Create a new database owned by that user.
     ```
-    sudo -u  postgres createdb payrolldb -O postgresUser
+    $ postgres createdb payrolldb -O postgresUser
     ```
 1. Create new tables.
 
     open the psql interactive terminal using the following command:
    ```
-   psql -U postgresUser 
+    $ psql payrolldb  -U postgresUser
    ```
     Run the following instructions in the psql interactive terminal
     ```
@@ -46,13 +49,13 @@ In order to run and build this App you will need Maven and Java 11 installed.
 Build the Spring Boot App. 
 
 ```
-mvn package
+$ mvn package
 ```
 
 Run the App.
 
 ```
-java -jar target/payroll-0.0.1-SNAPSHOT.jar com.wave.payroll.PayrollApplication
+$ java -jar target/payroll-0.0.1-SNAPSHOT.jar com.wave.payroll.PayrollApplication
 ```
 
 
