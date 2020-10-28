@@ -1,8 +1,8 @@
 # Wave Software Development Challenge
 
 This repository contains a Java 11 Spring Boot app managed with the Maven Build tool. It connects with a Postgres database. Together they act as a prototype payroll system API.
-
-## Initialize the Database Locally
+## Part I: Instructions on how to build/run my application
+### Initialize the Database Locally
 
 You will need to install Postgres locally and initialize a database locally to run this app. This can be done by following these steps:
 
@@ -34,7 +34,7 @@ You will need to install Postgres locally and initialize a database locally to r
 
 
 
-## Building and Running the App
+### Building and Running the Spring Boot App
 
 In order to connect the Spring Boot App to your Local Database Instance, you will to set the following environment variables. Example values shown below.
 
@@ -78,3 +78,17 @@ A request with the following format can be used to retrieve a payroll report
 GET http://localhost:8081/report
 ```     
 
+##Part II: Answers to the challenge questions:
+
+1. How did you test that your implementation was correct?
+I tested the app using an application called insomnia to check each end point.
+
+1. If this application was destined for a production environment, what would you add or change?
+There are a few things I would like to add to this application if it were destined for a production environment:
+    - Automated tests to the app to make sure the current functionality of the app continues to act as expected as more functionality is added to it in the future.
+    - A Docker process to enable running the app on different platforms.
+     
+1. What compromises did you have to make as a result of the time constraints of this challenge?
+In addition to not having time to implement the components listed in the previous question, given more time I would liked to add:
+    - More detailed error messages
+    - Functionality to retrieve custom Payroll Reports for specific employees, or time periods.
