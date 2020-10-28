@@ -89,6 +89,7 @@ There are a few things I would like to add to this application if it were destin
     - A Docker process to enable running the app on different platforms.
      
 1. What compromises did you have to make as a result of the time constraints of this challenge?
-In addition to not having time to implement the components listed in the previous question, given more time I would liked to add:
-    - More detailed error messages
+In addition to not having time to implement the components listed in the previous question, given more time I would have liked to add:
+    - More detailed error messages.
     - Functionality to retrieve custom Payroll Reports for specific employees, or time periods.
+    - Options to sort the Payroll Reports by either date or employee number.
