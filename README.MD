@@ -16,7 +16,7 @@ You will need to install Postgres locally and initialize a database locally to r
 
 1. Create a new database owned by that user.
     ```
-    $ postgres createdb payrolldb -O postgresUser
+    $ createdb payrolldb -O postgresUser
     ```
 1. Create new tables.
 
