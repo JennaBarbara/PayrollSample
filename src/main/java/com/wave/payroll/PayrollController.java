@@ -52,7 +52,7 @@ public class PayrollController {
             }
             uploadPayrollToDB(payrollList);
             logTimeReport(fileName);
-            return ResponseEntity.ok("");
+            return ResponseEntity.ok("Successfully uploaded the time report");
         } catch (IOException | ParseException e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("File could not be interpreted. Please check CSV formatting.");
         }
