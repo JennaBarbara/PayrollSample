@@ -2,6 +2,9 @@
 
 This repository contains a Java 11 Spring Boot app managed with the Maven Build tool. It connects with a Postgres database. Together they act as a prototype payroll system API.
 ## Part I: Instructions on how to build/run my application
+
+These commands have been tested on a Mac. Other systems may require slightly different set up.
+
 ### Initialize the Database Locally
 
 You will need to install Postgres locally and initialize a database locally to run this app. This can be done by following these steps:
